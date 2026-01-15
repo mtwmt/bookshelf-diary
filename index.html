@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/bookshelf-diary/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SPA Redirect Script -->
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).filter(function (s) {
+          return s.slice(0, 2) === 'p='
+        })[0];
+        if (decoded !== undefined) {
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded.slice(2) +
+            (l.search.slice(1).split('&').filter(function (s) { return s.slice(0, 2) !== 'p=' }).length > 0 ? '?' + l.search.slice(1).split('&').filter(function (s) { return s.slice(0, 2) !== 'p=' }).join('&').replace(/&/g, '~and~') : '') +
+            l.hash
+          );
+        }
+      }
+    }(window.location))
+  </script>
+
+  <!-- SEO -->
+  <title>書櫃日記 - 你的漫畫收藏管家 | Bookshelf Diary</title>
+  <meta name="description" content="掃描 ISBN、自動建檔、追蹤進度。書櫃日記讓你的漫畫收藏井然有序，不再重複購買、不再遺漏任何一集。" />
+  <meta name="keywords" content="漫畫收藏,ISBN掃描,書籍管理,收藏進度,書櫃日記,Bookshelf Diary" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mtwmt.github.io/bookshelf-diary/" />
+  <meta property="og:title" content="書櫃日記 - 你的漫畫收藏管家" />
+  <meta property="og:description" content="掃描 ISBN、自動建檔、追蹤進度。讓書櫃日記成為你的收藏管家。" />
+  <meta property="og:image" content="https://mtwmt.github.io/bookshelf-diary/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="書櫃日記 - 你的漫畫收藏管家" />
+  <meta name="twitter:description" content="掃描 ISBN、自動建檔、追蹤進度。讓書櫃日記成為你的收藏管家。" />
+  <meta name="twitter:image" content="https://mtwmt.github.io/bookshelf-diary/og-image.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <script type="module" crossorigin src="/bookshelf-diary/assets/index-DnmcKAa-.js"></script>
+  <link rel="stylesheet" crossorigin href="/bookshelf-diary/assets/index-C9TCOpiM.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

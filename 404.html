@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>書櫃日記 - 重新導向中...</title>
+    <script type="text/javascript">
+        // 這是為了解決 GitHub Pages 不支援單頁應用 (SPA) 路由的問題
+        // 當使用者重新整理頁面導致 404 時，此腳本會將 URL 存入 sessionStorage 
+        // 並導回 index.html，再由 React Router 接手處理。
+        var pathSegmentsToKeep = 1; // 剛好對應 /bookshelf-diary/ 這一層資料夾
+
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=/' +
+            l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+            (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash
+        );
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
