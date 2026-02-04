@@ -1,6 +1,7 @@
 {
-  "latest": "1.1.41",
-  "buildDate": "2026-02-02",
-  "apkUrl": "https://github.com/mtwmt/bookshelf-diary/releases/download/v1.1.4/build-1769968597373.apk",
-  "note": "v1.1.41 Maintenance"
+  "latest": "1.1.4",
+  "apkUrl": "https://github.com/mtwmt/bookshelf-diary/releases/latest",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mtwmt.bookshelfdiary",
+  "appStoreUrl": "https://apps.apple.com/app/id-pending",
+  "forceUpdate": false
 }
