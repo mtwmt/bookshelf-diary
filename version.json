@@ -1,6 +1,6 @@
 {
-  "latest": "1.1.5",
-  "buildDate": "2026-02-02",
+  "latest": "1.2.0",
+  "buildDate": "2026-03-01",
   "apkUrl": "https://github.com/mtwmt/bookshelf-diary/releases/download/v1.1.5/build-1770728505813.apk",
-  "note": "v1.1.5 Maintenance"
+  "note": "v1.2.0 會員系統與三維管理"
 }
