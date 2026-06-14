@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HVJH3V36TE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-HVJH3V36TE");
+    </script>
+    <link rel="icon" type="image/png" href="/bookshelf-diary/favicon.png" />
+    <link rel="apple-touch-icon" href="/bookshelf-diary/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4a3a2a" />
+    <!-- SPA Redirect Script -->
+    <script type="text/javascript">
+      (function (l) {
+        // 處理從 404.html 轉過來的 ?p=/path 參數
+        var params = new URLSearchParams(l.search);
+        var redirectPath = params.get("p");
+        if (redirectPath) {
+          // 取得 base path (例如 /bookshelf-diary/)
+          var basePath = l.pathname;
+          // 組合成完整路徑並更新網址列
+          window.history.replaceState(
+            null,
+            null,
+            basePath + redirectPath.slice(1) + l.hash,
+          );
+        }
+      })(window.location);
+    </script>
+
+    <!-- SEO -->
+    <title>書櫃日記 — 掃碼入庫，藏書有數 | Bookshelf Diary</title>
+    <meta
+      name="description"
+      content="掃碼入庫，藏書有數。書櫃日記專為漫畫與小說收藏家設計，掃描 ISBN 一秒建檔，缺第幾集一看就知道。免費下載，離線可用。"
+    />
+    <meta
+      name="keywords"
+      content="漫畫收藏,小說管理,ISBN掃描,書籍管理App,藏書管理,套數追蹤,書架分組,收藏進度,離線書籍管理,書櫃日記,Bookshelf Diary"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://mtwmt.github.io/bookshelf-diary/"
+    />
+    <meta property="og:title" content="書櫃日記 — 掃碼入庫，藏書有數" />
+    <meta
+      property="og:description"
+      content="漫畫小說掃一下就建檔，缺第幾集一看就知道。免費下載，無需註冊。"
+    />
+    <meta
+      property="og:image"
+      content="https://mtwmt.github.io/bookshelf-diary/og-image.png"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="書櫃日記 — 掃碼入庫，藏書有數" />
+    <meta
+      name="twitter:description"
+      content="漫畫小說掃一下就建檔，缺第幾集一看就知道。免費下載，無需註冊。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://mtwmt.github.io/bookshelf-diary/og-image.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&family=Noto+Serif+TC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/bookshelf-diary/assets/index-BvASP-Cq.js"></script>
+    <link rel="stylesheet" crossorigin href="/bookshelf-diary/assets/index-D6qFAKV-.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
