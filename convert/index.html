@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-TW" class="scroll-smooth scroll-pt-18 max-sm:scroll-pt-24 motion-reduce:scroll-auto">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HVJH3V36TE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-HVJH3V36TE");
+    </script>
+    <link rel="icon" type="image/png" href="/bookshelf-diary/favicon.png" />
+    <link rel="apple-touch-icon" href="/bookshelf-diary/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#272421" />
+    <!-- SPA Redirect Script -->
+    <script type="text/javascript">
+      (function (l) {
+        // 處理從 404.html 轉過來的 ?p=/path 參數
+        var params = new URLSearchParams(l.search);
+        var redirectPath = params.get("p");
+        if (redirectPath) {
+          // 取得 base path (例如 /bookshelf-diary/)
+          var basePath = l.pathname;
+          // 組合成完整路徑並更新網址列
+          window.history.replaceState(
+            null,
+            null,
+            basePath + redirectPath.slice(1) + l.hash,
+          );
+        }
+      })(window.location);
+    </script>
+
+    <!--seo:start--><title>BookBuddy 轉檔工具｜匯入書櫃日記</title>
+<meta name="description" content="將 BookBuddy 匯出的 Excel（.xlsx）藏書檔轉換成書櫃日記可匯入的格式，下載轉換結果後匯入 App。">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="書櫃日記">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="BookBuddy 轉檔工具｜匯入書櫃日記">
+<meta property="og:description" content="將 BookBuddy 匯出的 Excel（.xlsx）藏書檔轉換成書櫃日記可匯入的格式，下載轉換結果後匯入 App。">
+<meta property="og:image" content="https://mtwmt.github.io/bookshelf-diary/logo.png">
+<meta property="og:image:width" content="256">
+<meta property="og:image:height" content="256">
+<meta property="og:image:alt" content="書櫃日記 Logo">
+<meta property="og:url" content="https://mtwmt.github.io/bookshelf-diary/convert/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BookBuddy 轉檔工具｜匯入書櫃日記">
+<meta name="twitter:description" content="將 BookBuddy 匯出的 Excel（.xlsx）藏書檔轉換成書櫃日記可匯入的格式，下載轉換結果後匯入 App。">
+<meta name="twitter:image" content="https://mtwmt.github.io/bookshelf-diary/logo.png">
+<meta name="twitter:image:alt" content="書櫃日記 Logo">
+<link rel="canonical" href="https://mtwmt.github.io/bookshelf-diary/convert/"><!--seo:end-->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&family=Noto+Serif+TC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/bookshelf-diary/assets/index-BIeDhEvz.js"></script>
+    <link rel="modulepreload" crossorigin href="/bookshelf-diary/assets/rolldown-runtime-W7wSyTde.js">
+    <link rel="stylesheet" crossorigin href="/bookshelf-diary/assets/index-_FWTwCCk.css">
+  </head>
+
+  <body class="m-0 overflow-x-hidden bg-book-50 antialiased">
+    <div id="root" data-prerender-path="/convert"><link rel="preload" as="image" href="/bookshelf-diary/assets/icon-BNYnbRTj.png"/><button type="button" aria-label="回到頁首" aria-hidden="true" tabindex="-1" class="site-back-to-top fixed bottom-5 right-5 z-40 flex h-11 w-11 items-center justify-center rounded-md border border-book-800/20 bg-book-50 text-book-800 shadow-sm transition-opacity duration-200 pointer-events-none opacity-0"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg></button><div class="min-h-screen bg-book-50 font-sans text-book-800 [&amp;_.inner-soft-surface]:border-book-line [&amp;_.inner-soft-surface]:bg-book-card [&amp;_.inner-line-border]:border-book-line [&amp;_.interior-panel]:rounded-xl [&amp;_.interior-panel]:border [&amp;_.interior-panel]:border-book-line [&amp;_.interior-panel]:bg-book-card [&amp;_.tutorial-guide]:border [&amp;_.tutorial-guide]:border-book-line [&amp;_.tutorial-guide]:bg-white [&amp;_.tutorial-preview]:text-book-50 [&amp;_.tutorial-preview_.inner-soft-surface]:bg-white/10 [&amp;_.tutorial-preview_.inner-line-border]:border-white/20 [&amp;_input:not([type=file])]:border-book-300 [&amp;_input:not([type=file])]:bg-white [&amp;_textarea]:border-book-300 [&amp;_textarea]:bg-white [&amp;_input::placeholder]:text-book-500 [&amp;_textarea::placeholder]:text-book-500 [&amp;_input:focus-visible]:outline-book-copper [&amp;_textarea:focus-visible]:outline-book-copper [&amp;_button:focus-visible]:outline-book-copper [&amp;_a:focus-visible]:outline-book-copper [&amp;_summary:focus-visible]:outline-book-copper"><div class="fixed inset-x-0 top-0 z-50 h-18 bg-book-50 font-sans text-book-800 max-sm:h-24"><div class="mx-auto max-w-7xl px-[6%] h-full"><header class="flex h-full items-center justify-between gap-6 max-sm:grid max-sm:grid-cols-[minmax(0,1fr)_auto] max-sm:grid-rows-[52px_minmax(0,1fr)] max-sm:gap-x-3 max-sm:gap-y-0"><a class="flex min-w-0 items-center gap-3" aria-label="書櫃日記首頁" href="/bookshelf-diary/" data-discover="true"><img class="rounded-xl max-md:size-8 max-md:rounded-lg" src="/bookshelf-diary/assets/icon-BNYnbRTj.png" width="42" height="42" alt=""/><span class="font-serif text-xl font-medium leading-tight tracking-wide max-md:whitespace-nowrap max-md:text-lg max-md:tracking-normal">書櫃日記<small class="mt-1 block font-sans text-xs font-normal tracking-wider opacity-60 max-md:mt-0.5 max-md:text-[10px]">BOOKSHELF DIARY</small></span></a><nav class="flex items-center gap-8 text-sm text-book-500 max-sm:col-span-2 max-sm:row-start-2 max-sm:grid max-sm:grid-cols-3 max-sm:gap-0 max-sm:self-stretch max-sm:whitespace-nowrap" aria-label="主選單"><a class="hover:text-book-800 focus-visible:outline-2 focus-visible:outline-book-copper aria-[current=page]:text-book-800 aria-[current=page]:underline aria-[current=page]:decoration-book-copper aria-[current=page]:underline-offset-8 max-sm:flex max-sm:min-h-11 max-sm:items-center max-sm:justify-center" href="/bookshelf-diary/#features" data-discover="true">功能介紹</a><a class="hover:text-book-800 focus-visible:outline-2 focus-visible:outline-book-copper aria-[current=page]:text-book-800 aria-[current=page]:underline aria-[current=page]:decoration-book-copper aria-[current=page]:underline-offset-8 max-sm:flex max-sm:min-h-11 max-sm:items-center max-sm:justify-center" href="/bookshelf-diary/tutorial" data-discover="true">使用指南</a><a class="hover:text-book-800 focus-visible:outline-2 focus-visible:outline-book-copper aria-[current=page]:text-book-800 aria-[current=page]:underline aria-[current=page]:decoration-book-copper aria-[current=page]:underline-offset-8 max-sm:flex max-sm:min-h-11 max-sm:items-center max-sm:justify-center" href="/bookshelf-diary/faq" data-discover="true">常見問題</a><a class="rounded-md bg-book-800 px-4 py-2.5 font-semibold text-book-50 hover:bg-book-700 max-sm:hidden" href="/bookshelf-diary/#download" data-discover="true">免費下載</a></nav><div class="hidden max-sm:col-start-2 max-sm:row-start-1 max-sm:flex"><a class="grid min-h-11 shrink-0 place-items-center whitespace-nowrap rounded-md bg-book-800 px-4 py-3 text-sm font-semibold text-book-50 hover:bg-book-700 max-sm:px-3" href="/bookshelf-diary/#download" data-discover="true">下載</a></div></header></div></div><main><!--$--><div class="min-h-screen pb-20 pt-24 max-md:pb-12 max-sm:pt-28"><div class="mx-auto max-w-7xl px-[6%]"><div class="max-w-3xl mx-auto"><header class="mb-[42px] max-w-[740px] max-md:mb-8"><h1 class="m-0 font-serif text-5xl font-semibold leading-snug tracking-[-0.035em] text-book-800 max-md:text-4xl">轉檔工具</h1><p class="mt-4 text-[16px] leading-7 text-book-600 max-md:text-sm">將 BookBuddy 匯出的 Excel（.xlsx）藏書資料，轉為書櫃日記可匯入的格式。</p></header><div class="flex items-center justify-center gap-3 mb-12"><div class="flex items-center gap-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold border bg-book-copper/20 border-book-copper/50 text-book-copper">1</div><span class="text-sm text-book-copper">上傳檔案</span></div></div><div class="flex items-center gap-3"><div class="w-8 h-px bg-white/10"></div><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold border inner-soft-surface inner-line-border text-book-500">2</div><span class="text-sm text-book-500">下載完成</span></div></div></div><div class="interior-panel rounded-2xl border inner-line-border p-8 md:p-12"><div class="mb-8"><h2 class="text-lg font-bold text-book-800 mb-2">選擇來源格式</h2><div class="flex gap-3 max-sm:flex-col"><button class="px-5 py-2.5 rounded-xl max-sm:w-full max-sm:whitespace-normal bg-book-copper/15 border border-book-copper/40 text-book-copper font-semibold text-sm">BookBuddy</button><button disabled="" class="px-5 py-2.5 rounded-xl max-sm:w-full max-sm:whitespace-normal inner-soft-surface border inner-line-border text-book-500 text-sm cursor-not-allowed">更多格式開發中...</button></div></div><div role="button" tabindex="0" aria-label="選擇 BookBuddy Excel 檔案，或將檔案拖放到這裡" class="border-2 border-dashed rounded-2xl p-12 text-center cursor-pointer transition-all inner-line-border hover:border-book-copper/40 hover:bg-white/5"><input type="file" accept=".xlsx" class="hidden"/><svg class="w-12 h-12 text-book-copper/40 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg><p class="text-book-800 font-semibold mb-2">拖放 .xlsx 檔案到這裡</p><p class="text-book-500 text-sm">或點擊選擇檔案</p></div><p class="mt-6 text-book-500 text-xs text-center">檔案不會上傳到任何伺服器，所有轉換都在你的瀏覽器中完成</p></div><div class="mt-12 p-6 rounded-2xl inner-soft-surface border inner-line-border"><h3 class="text-book-800 font-bold mb-3">使用方式</h3><ol class="space-y-2 text-book-600 text-sm"><li class="flex items-start gap-3"><span class="text-book-copper font-bold shrink-0">1.</span>在 BookBuddy 中匯出你的藏書（Export → Excel / CSV）</li><li class="flex items-start gap-3"><span class="text-book-copper font-bold shrink-0">2.</span>將匯出的 .xlsx 檔案上傳到這裡，轉換完成後會自動下載</li><li class="flex items-start gap-3"><span class="text-book-copper font-bold shrink-0">3.</span>打開書櫃日記 App → 設定 → 匯入 Excel，選擇下載的檔案</li></ol></div></div></div></div><!--/$--></main><div class="bg-book-50 font-sans text-book-800"><div class="mx-auto max-w-7xl px-[6%]"><footer class="pb-7 max-md:pb-5.5"><div class="flex items-start justify-between gap-12 max-md:grid max-md:grid-cols-1 max-md:gap-4"><a class="flex min-w-0 items-center gap-3" aria-label="書櫃日記首頁" href="/bookshelf-diary/" data-discover="true"><img class="rounded-xl max-md:size-8 max-md:rounded-lg" src="/bookshelf-diary/assets/icon-BNYnbRTj.png" width="36" height="36" alt=""/><span class="font-serif text-xl font-medium leading-tight tracking-wide max-md:whitespace-nowrap max-md:text-lg max-md:tracking-normal">書櫃日記<small class="mt-1 block font-sans text-xs font-normal tracking-wider opacity-60 max-md:mt-0.5 max-md:text-[10px]">BOOKSHELF DIARY</small></span></a><nav class="ml-auto grid grid-cols-[repeat(3,max-content)] gap-x-16 [&amp;_a:hover]:text-book-copper max-lg:gap-x-8 max-md:ml-0 max-md:w-full max-md:grid-cols-2 max-md:gap-x-6 max-md:gap-y-4" aria-label="頁尾導覽"><div class="text-sm text-book-500 max-md:col-span-2"><strong class="mb-5 block text-xs font-semibold text-book-700 max-md:mb-1">產品</strong><div class="grid grid-flow-col grid-cols-[repeat(2,max-content)] grid-rows-3 gap-x-7 gap-y-2 leading-relaxed max-md:grid-cols-2 max-md:gap-y-0 max-md:leading-normal max-md:[&amp;&gt;a]:flex max-md:[&amp;&gt;a]:min-h-8 max-md:[&amp;&gt;a]:items-center"><a href="/bookshelf-diary/#features" data-discover="true">功能介紹</a><a href="/bookshelf-diary/tutorial" data-discover="true">使用指南</a><a href="/bookshelf-diary/#pricing" data-discover="true">方案</a><a href="/bookshelf-diary/changelog" data-discover="true">更新紀錄</a><a href="/bookshelf-diary/faq" data-discover="true">常見問題</a></div></div><div class="text-sm text-book-500 "><strong class="mb-5 block text-xs font-semibold text-book-700 max-md:mb-1">工具與支援</strong><div class="grid gap-2 leading-relaxed max-md:gap-y-0 max-md:leading-normal max-md:[&amp;&gt;a]:flex max-md:[&amp;&gt;a]:min-h-8 max-md:[&amp;&gt;a]:items-center"><a href="/bookshelf-diary/convert" data-discover="true">轉檔工具</a><a href="/bookshelf-diary/bookshelf_template.xlsx">Excel 範本</a><a href="/bookshelf-diary/feedback" data-discover="true">意見回饋</a></div></div><div class="text-sm text-book-500 "><strong class="mb-5 block text-xs font-semibold text-book-700 max-md:mb-1">資料與隱私</strong><div class="grid gap-2 leading-relaxed max-md:gap-y-0 max-md:leading-normal max-md:[&amp;&gt;a]:flex max-md:[&amp;&gt;a]:min-h-8 max-md:[&amp;&gt;a]:items-center"><a href="/bookshelf-diary/privacy" data-discover="true">隱私政策</a><a href="/bookshelf-diary/terms" data-discover="true">使用條款</a><a href="/bookshelf-diary/delete-account" data-discover="true">刪除帳號</a></div></div></nav></div><div class="mt-8 flex items-center justify-between gap-5 border-t border-book-line pt-5 text-xs text-book-600 max-md:mt-5 max-md:flex-col max-md:items-start max-md:gap-2.5"><span>© 2026 Bookshelf Diary. All rights reserved.</span><a class="text-book-copper hover:text-book-copper" href="https://mtwmt.com/">由 Mandy 獨立開發</a></div></footer></div></div></div></div>
+  </body>
+</html>
